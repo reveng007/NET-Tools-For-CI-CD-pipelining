@@ -17,5 +17,5 @@ NET Tools for CI CD pipelining usecase!
 
 4. CertStealer: https://github.com/TheWover/CertStealer (URL of modified: .zip)
 
-> => Can build: x64 as well as AnyCPU binaries in 4.8 and 4.7.2 NET Version.
+> => Can build: x64 as well as AnyCPU binaries in 4.8, 4.7.2 and 3.5 NET Version.
 
