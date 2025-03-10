@@ -19,3 +19,6 @@ NET Tools for CI CD pipelining usecase!
 
 > => Can build: x64 as well as AnyCPU binaries in 4.8, 4.7.2 and 3.5 NET Version.
 
+5. SharpSystemTriggers: https://github.com/cube0x0/SharpSystemTriggers
+   - SharpSpoolTrigger: Created different folder as well as different .sln file. (URL of modified: .zip)
+   > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version.
