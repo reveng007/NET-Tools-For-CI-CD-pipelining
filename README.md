@@ -36,4 +36,7 @@ NET Tools for CI CD pipelining usecase!
 6. Rubeus: https://github.com/GhostPack/Rubeus (URL of modified: .zip)
 > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version.
 
+7. Seatbelt: https://github.com/GhostPack/Seatbelt (URL of modified: .zip)
+> => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version.
+
 
