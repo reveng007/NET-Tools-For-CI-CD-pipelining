@@ -30,5 +30,8 @@ NET Tools for CI CD pipelining usecase!
    > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version.
    - SharpDcomTrigger: Created different folder as well as different .sln file. (URL of modified: .zip)
    > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version.
+   - Midl2Bytes: Created different folder as well as different .sln file. (URL of modified: .zip)
+   > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version.
+
 
 
