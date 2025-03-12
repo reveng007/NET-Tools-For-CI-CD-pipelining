@@ -41,3 +41,8 @@ NET Tools for CI CD pipelining usecase!
 
 8. SharpView: https://github.com/tevora-threat/SharpView (URL of modified: .zip)
 > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version.
+
+9. SharpHound: https://github.com/SpecterOps/SharpHound (URL of modified: .zip)
+> => Can build: x64, AnyCPU and x86 binaries in 4.8 NET Version.
+> => Build via MSBuild Binary was causing error, So Compiled binaries via Visual Studio in this case, and kept those binaries here as it is.
+
