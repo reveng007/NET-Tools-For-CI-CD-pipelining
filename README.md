@@ -21,15 +21,14 @@ NET Tools for CI CD pipelining usecase!
 
 > => Can build: x64 as well as AnyCPU binaries in 4.8 and 4.7.2 NET Version. \
 > => CodeCepticon Works! \
-
-> => Have to check for x86!
+> => ConfuserEx profile also added here (AnyCPU/x86/x64)
 
 4. CertStealer: https://github.com/TheWover/CertStealer (URL of modified: .zip)
 
 > => Can build: x64 as well as AnyCPU binaries in 4.8, 4.7.2 and 3.5 NET Version. \
 > => CodeCepticon Works! \
-
-> => Have to check for x86!
+> => Copied dependecy dll, `4.CertStealer_TheWover\CertStealer-main\packages\CommandLineParser.1.9.71\lib\net35\CommandLine.dll` to compiled binary folder: For ConfuSerEx UseCase. \
+> => ConfuserEx profile also added here (AnyCPU/x86/x64)
 
 5. SharpSystemTriggers: https://github.com/cube0x0/SharpSystemTriggers
    - SharpSpoolTrigger: Created different folder as well as different .sln file. (URL of modified: .zip)
