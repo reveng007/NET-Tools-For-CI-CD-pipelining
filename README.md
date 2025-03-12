@@ -52,20 +52,20 @@ NET Tools for CI CD pipelining usecase!
 > Updated these lines in Newly created/added SharpChrome.sln file:
 ```xml
 <ItemGroup>
-    <Compile Include="Domain\Version.cs">
+    <Compile Include="..\..\SharpDPAPI-all\SharpDPAPI\Domain\Version.cs">
       <Link>Domain\Version.cs</Link>
     </Compile>
-    <Compile Include="lib\Backup.cs">
+    <Compile Include="..\..\SharpDPAPI-all\SharpDPAPI\lib\Backup.cs">
       <Link>lib\Backup.cs</Link>
     </Compile>
-    <Compile Include="lib\BigInteger.cs">
+    <Compile Include="..\..\SharpDPAPI-all\SharpDPAPI\lib\BigInteger.cs">
       <Link>lib\BigInteger.cs</Link>
-    </Compile>
+    </Compile>]
 ...
 ...
 ...
 ```
-> From: `..\SharpDPAPI\Domain\Version.cs` to `Domain\Version.cs`, cause those files are copied from SharpDPAPI directory and both SharpDPAPI and SharpChrome folder are made independent of one another.
+> From: `..\SharpDPAPI\Domain\Version.cs` to `..\..\SharpDPAPI-all\SharpDPAPI\Domain\Version.cs`, cause I have created 2 seperate folders solely for Codecepticon compilation of SharpChrome and SharpDPAPI independently and both SharpDPAPI and SharpChrome folder are made independent of one another.
    - SharpDPAPI: Created different folder as well as different .sln file. (URL of modified: .zip)
    > => 
 
