@@ -46,3 +46,29 @@ NET Tools for CI CD pipelining usecase!
 > => Can build: x64, AnyCPU and x86 binaries in 4.8 NET Version.
 > => Build via MSBuild Binary was causing error, So Compiled binaries via Visual Studio in this case, and kept those binaries here as it is.
 
+10. SharpDPAPI: https://github.com/GhostPack/SharpDPAPI
+   - SharpChrome: Created different folder as well as different .sln file. (URL of modified: .zip)
+   > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version.
+> Updated these lines in Newly created/added SharpChrome.sln file:
+```xml
+<ItemGroup>
+    <Compile Include="..\..\SharpDPAPI-all\SharpDPAPI\Domain\Version.cs">
+      <Link>Domain\Version.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SharpDPAPI-all\SharpDPAPI\lib\Backup.cs">
+      <Link>lib\Backup.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SharpDPAPI-all\SharpDPAPI\lib\BigInteger.cs">
+      <Link>lib\BigInteger.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SharpDPAPI-all\SharpDPAPI\lib\Certificate.cs">
+      <Link>lib\Certificate.cs</Link>
+...
+...
+...
+```
+> From: `SharpDPAPI\Domain\Version.cs` to `..\..\SharpDPAPI-all\SharpDPAPI\Domain\Version.cs`.
+   - SharpDPAPI: Created different folder as well as different .sln file. (URL of modified: .zip)
+   > => 
+
+
