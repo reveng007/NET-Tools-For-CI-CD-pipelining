@@ -6,24 +6,29 @@ NET Tools for CI CD pipelining usecase!
 
 > => This solution has 2 projects. CodeCepticon only supports single-project solution file. \
 > => Can build: x64 as well as AnyCPU binaries in 4.8 and 4.7.2 NET Version. \
+
 > => Have to check for x86!
 
 > ### Need Some Changes to be made in file.sln of SharpSCCM   => !!!!!
 
 2. Certify: https://github.com/GhostPack/Certify/ (URL of modified: .zip)
 
-> => Can build: x64 as well as AnyCPU binaries in 4.8 and 4.7.2 NET Version. \
+> => Can build: x64, AnyCPU anc x86 binaries in 4.8 and 4.7.2 NET Version. \
 > => CodeCepticon Works! \
 > => ConfuserEx profile also added here (AnyCPU/x86/x64)
 
 3. CertifyKit: https://github.com/Hagrid29/CertifyKit (URL of modified: .zip)
 
 > => Can build: x64 as well as AnyCPU binaries in 4.8 and 4.7.2 NET Version. \
+> => CodeCepticon Works! \
+
 > => Have to check for x86!
 
 4. CertStealer: https://github.com/TheWover/CertStealer (URL of modified: .zip)
 
 > => Can build: x64 as well as AnyCPU binaries in 4.8, 4.7.2 and 3.5 NET Version. \
+> => CodeCepticon Works! \
+
 > => Have to check for x86!
 
 5. SharpSystemTriggers: https://github.com/cube0x0/SharpSystemTriggers
