@@ -8,6 +8,8 @@ NET Tools for CI CD pipelining usecase!
 > => Can build: x64 as well as AnyCPU binaries in 4.8 and 4.7.2 NET Version. \
 > => Have to check for x86!
 
+> Need Some Changes to be made in file.sln of SharpSCCM
+
 2. Certify: https://github.com/GhostPack/Certify/ (URL of modified: .zip)
 
 > => Can build: x64 as well as AnyCPU binaries in 4.8 and 4.7.2 NET Version. \
