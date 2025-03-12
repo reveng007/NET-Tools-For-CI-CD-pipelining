@@ -12,8 +12,8 @@ NET Tools for CI CD pipelining usecase!
 
 2. Certify: https://github.com/GhostPack/Certify/ (URL of modified: .zip)
 
-> => Can build: x64 as well as AnyCPU binaries in 4.8 and 4.7.2 NET Version.
-> => CodeCepticon Works!
+> => Can build: x64 as well as AnyCPU binaries in 4.8 and 4.7.2 NET Version. \
+> => CodeCepticon Works! \
 > => ConfuserEx profile also added here (AnyCPU/x86/x64)
 
 3. CertifyKit: https://github.com/Hagrid29/CertifyKit (URL of modified: .zip)
