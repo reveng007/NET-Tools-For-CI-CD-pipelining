@@ -6,7 +6,7 @@ NET Tools for CI CD pipelining usecase!
 
 > => This solution has 2 projects. CodeCepticon only supports single-project solution file. \
 > => Created different folder as well as different .sln file. (URL of modified: .zip). \
-> ### => UnitTests Compilation Causing Errors, I tried to run SharpSCCM Individually, I found it to be working against Defender as well as getting executed (Although more testing needs to be done in SCCM enabled env) 
+> ### => UnitTests Compilation Causing Errors, I tried to run SharpSCCM Individually with `MSbuild` as well as `ConfuSerEx`, I found it to be working against Defender as well as getting executed (Although more testing needs to be done in SCCM enabled env) 
 > 
 <details><summary>See Details</summary>
 
@@ -168,7 +168,7 @@ PS C:\Users\soumy\Downloads> .\SharpSCCM.exe local triage
 ```
 </details>
 
-> => CodeCepticon Worked with `SharpSCCM` as well as `` \
+> => CodeCepticon Worked with `SharpSCCM` ***BUT NOT with `UnitTests`*** \
 > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version. \
 > => ConfuserEx profile also added here (AnyCPU/x86/x64)
 
