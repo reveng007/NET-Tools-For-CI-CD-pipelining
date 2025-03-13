@@ -5,7 +5,167 @@ NET Tools for CI CD pipelining usecase!
 1. SharpSCCM: https://github.com/Mayyhem/SharpSCCM/ (URL of modified: .zip)
 
 > => This solution has 2 projects. CodeCepticon only supports single-project solution file. \
-> => Can build: x64 as well as AnyCPU binaries in 4.8 and 4.7.2 NET Version. \
+> => Created different folder as well as different .sln file. (URL of modified: .zip). \
+> ### => UnitTests Compilation Causing Errors, I tried to run SharpSCCM Individually, I found it to be working (Although more testing needs to be done in SCCM enabled env)
+<details><summary>See Details</summary>
+
+```powershell
+PS C:\Users\soumy\Downloads> .\SharpSCCM.exe  get
+
+  _______ _     _ _______  ______  _____  _______ _______ _______ _______
+  |______ |_____| |_____| |_____/ |_____] |______ |       |       |  |  |
+  ______| |     | |     | |    \_ |       ______| |______ |______ |  |  |    @_Mayyhem
+
+Required command was not provided.
+
+Description:
+  A group of commands that fetch objects from SMS Providers via WMI, management points via HTTP(S), or domain controllers via LDAP
+
+Usage:
+  SharpSCCM get [command] [options]
+
+Options:
+  -sc, --site-code <site-code>  The three character site code (e.g., PS1) (default: the site code of the client running SharpSCCM)
+  --debug                       Print debug messages for troubleshooting
+  --no-banner                   Do not display banner in command output
+  -?, -h, --help                Show help and usage information
+
+Commands:
+  admins                        Get information on SCCM administrators and security roles from an SMS Provider via WMI
+                                  Permitted security roles:
+                                    - Any (SMS Admins local group)
+  applications                  Get information on applications from an SMS Provider via WMI
+                                  Permitted security roles:
+                                    - Full Administrator
+                                    - Application Administrator
+                                    - Application Author
+                                    - Application Deployment Manager
+                                    - Operating System Deployment Manager
+                                    - Operations Administrator
+                                    - Read-only Analyst
+  classes                       Get a list of WMI classes from an SMS Provider
+                                  Permitted security roles:
+                                    - Any (SMS Admins local group)
+  class-instances <wmi-class>   Get information on WMI class instances from an SMS Provider
+                                  Permitted security roles:
+                                    - ACLs are applied at the object class and instance level
+  class-properties <wmi-class>  Get all properties of a specified WMI class from an SMS Provider
+                                  Permitted security roles:
+                                    - Any (SMS Admins local group)
+  collections                   Get information on collections from an SMS Provider via WMI
+                                  Permitted security roles:
+                                    - Any (SMS Admins local group)
+  collection-members            Get the members of a specified collection from an SMS Provider via WMI
+                                  Permitted security roles:
+                                    - Any (SMS Admins local group)
+  collection-rules              Get the rules that are evaluated to add members to a collection from an SMS Provider via WMI
+                                  Permitted security roles:
+                                    - Any (SMS Admins local group)
+  deployments                   Get information on deployments from an SMS Provider via WMI
+                                  Permitted security roles:
+                                    - Full Administrator
+                                    - Application Administrator
+                                    - Application Author
+                                    - Application Deployment Manager
+                                    - Operating System Deployment Manager
+                                    - Operations Administrator
+                                    - Read-only Analyst
+  devices                       Get information on devices from an SMS Provider via WMI
+                                  Permitted security roles:
+                                    - Any (SMS Admins local group)
+  primary-users                 Get information on primary users set for devices from an SMS Provider via WMI
+                                  Permitted security roles:
+                                    - Full Administrator
+                                    - Application Administrator
+                                    - Application Deployment Manager
+                                    - Operations Administrator
+                                    - Read-only Analyst
+  resource-id                   Get the resourceID for a username or device from an SMS Provider via WMI
+                                  Permitted security roles:
+                                    - Any (SMS Admins local group)
+  naa, secrets                  Request the machine policy from a management point via HTTP to obtain credentials for network access accounts, collection variables, and task
+                                sequences
+                                  Requirements:
+                                    - Domain computer account credentials
+                                        OR
+                                    - Local Administrators group membership on a client
+                                        OR
+                                    - PXE certificate and media GUID (use -c and -m)
+  site-info                     Get information about the site, including the site server name, from a domain controller via LDAP
+  site-push-settings            Get automatic client push installation settings from an SMS Provider via WMI
+                                  Permitted security roles:
+                                    - Any (SMS Admins local group)
+  software                      Query a management point for distribution point content locations
+  users                         Get information on users from an SMS Provider via WMI
+                                  Permitted security roles:
+                                    - Any (SMS Admins local group)
+
+[+] Completed execution in 00:00:00.1620716
+PS C:\Users\soumy\Downloads> .\SharpSCCM.exe get collection-rules
+
+  _______ _     _ _______  ______  _____  _______ _______ _______ _______
+  |______ |_____| |_____| |_____/ |_____] |______ |       |       |  |  |
+  ______| |     | |     | |    \_ |       ______| |______ |______ |  |  |    @_Mayyhem
+
+[!] Please specify a collection Name (-n), CollectionID (-i), device Name (-d), user UniqueUserName (-u), or ResourceID (-r) to get applicable rules for
+[+] Completed execution in 00:00:00.0946297
+PS C:\Users\soumy\Downloads> .\SharpSCCM.exe local
+
+  _______ _     _ _______  ______  _____  _______ _______ _______ _______
+  |______ |_____| |_____| |_____/ |_____] |______ |       |       |  |  |
+  ______| |     | |     | |    \_ |       ______| |______ |______ |  |  |    @_Mayyhem
+
+Required command was not provided.
+
+Description:
+  A group of commands to interact with the local workstation/server
+
+Usage:
+  SharpSCCM local [command] [options]
+
+Options:
+  --debug         Print debug messages for troubleshooting
+  --no-banner     Do not display banner in command output
+  -?, -h, --help  Show help and usage information
+
+Commands:
+  classes                       Get a list of local WMI classes
+  class-instances <wmi-class>   Get information on local WMI class instances
+  class-properties <wmi-class>  Get all properties of a specified local WMI class
+  client-info                   Get the client software version for the local host via WMI
+  create-ccr <target>           Untested function to create a CCR that initiates client push installation to a specified target
+                                  Requirements:
+                                     - Local Administrators group membership on a primary site server
+                                     - ConfigMgr 2003 or 2007
+  grep <string-to-find> <path>  Search a specified file for a specified string
+  push-logs                     Search for evidence of client push installation
+  query <query>                 Execute a given WQL query on the local system
+                                  Permitted security roles:
+                                    - ACLs are applied at the object class and instance level
+  naa, secrets                  Get policy secrets (e.g., network access accounts, task sequences, and collection variables) stored locally in the WMI repository
+                                  Requirements:
+                                     - Local Administrators group membership on a client
+  site-info                     Get the current management point and site code for the local host via WMI
+  triage                        Gather information about the site from local log files
+  user-sid                      Get the hex SID for the current user
+
+[+] Completed execution in 00:00:00.1553473
+PS C:\Users\soumy\Downloads> .\SharpSCCM.exe local triage
+
+  _______ _     _ _______  ______  _____  _______ _______ _______ _______
+  |______ |_____| |_____| |_____/ |_____] |______ |       |       |  |  |
+  ______| |     | |     | |    \_ |       ______| |______ |______ |  |  |    @_Mayyhem
+
+[+] Client cache contents and permissions for the current user:
+    Perms      Size  Date modified          Name
+[!] Could not find file 'C:\Windows\ccmcache'.
+
+[+] Searching logs for possible UNC paths:
+[!] An unhandled exception of type System.Reflection.TargetInvocationException occurred: Exception has been thrown by the target of an invocation.
+```
+</details>
+
+> => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version. \
 
 > => Have to check for x86!
 
@@ -13,19 +173,19 @@ NET Tools for CI CD pipelining usecase!
 
 2. Certify: https://github.com/GhostPack/Certify/ (URL of modified: .zip)
 
-> => Can build: x64, AnyCPU anc x86 binaries in 4.8 and 4.7.2 NET Version. \
+> => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version. \
 > => CodeCepticon Works! \
 > => ConfuserEx profile also added here (AnyCPU/x86/x64)
 
 3. CertifyKit: https://github.com/Hagrid29/CertifyKit (URL of modified: .zip)
 
-> => Can build: x64 as well as AnyCPU binaries in 4.8 and 4.7.2 NET Version. \
+> => Can build: x64, x86 as well as AnyCPU binaries in 4.8 and 4.7.2 NET Version. \
 > => CodeCepticon Works! \
 > => ConfuserEx profile also added here (AnyCPU/x86/x64)
 
 4. CertStealer: https://github.com/TheWover/CertStealer (URL of modified: .zip)
 
-> => Can build: x64 as well as AnyCPU binaries in 4.8, 4.7.2 and 3.5 NET Version. \
+> => Can build: x64, AnyCPU and x86 binaries in 4.8, 4.7.2 and 3.5 NET Version. \
 > => CodeCepticon Works! \
 > => Copied dependecy dll, `4.CertStealer_TheWover\CertStealer-main\packages\CommandLineParser.1.9.71\lib\net35\CommandLine.dll` to compiled binary folder: For ConfuSerEx UseCase. \
 > => Presence of dependecy dll is present in .csproj file. \
