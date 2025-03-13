@@ -72,7 +72,7 @@ NET Tools for CI CD pipelining usecase!
 > => CodeCepticon Works! \
 > => Presence of dependecy dll is present in .csproj file (But in a scattered manner). \
 > => ConfuserEx profile also added here (AnyCPU/x86/x64) \
-> => Copied dependecy dlls:
+> => Copied dependecy dlls to compiled binary folder: For ConfuSerEx UseCase.:
 <details><summary>See Details</summary>
 
 ```markdown
