@@ -49,17 +49,23 @@ NET Tools for CI CD pipelining usecase!
    > => ConfuserEx profile also added here (AnyCPU/x86/x64)
 
 6. Rubeus: https://github.com/GhostPack/Rubeus (URL of modified: .zip)
-> => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version.
+> => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version. \
+> => CodeCepticon Works! \
+> 
 
 7. Seatbelt: https://github.com/GhostPack/Seatbelt (URL of modified: .zip)
-> => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version.
+> => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version. \
+> => CodeCepticon Works! \
 
 8. SharpView: https://github.com/tevora-threat/SharpView (URL of modified: .zip)
-> => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version.
+> => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version. \
+> => CodeCepticon Works! \
 
 9. SharpHound: https://github.com/SpecterOps/SharpHound (URL of modified: .zip)
 > => Can build: x64, AnyCPU and x86 binaries in 4.8 NET Version.
 > => Build via MSBuild Binary was causing error, So Compiled binaries via Visual Studio in this case, and kept those binaries here as it is.
+>
+> 
 
 10. SharpDPAPI: https://github.com/GhostPack/SharpDPAPI
    - SharpChrome: Created different folder as well as different .sln file. (URL of modified: .zip)
