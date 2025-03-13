@@ -124,7 +124,8 @@ Exception: dnlib.DotNet.AssemblyResolveException: Could not resolve assembly: IC
 10. SharpDPAPI: https://github.com/GhostPack/SharpDPAPI
    - SharpChrome: Created different folder as well as different .sln file. (URL of modified: .zip)
    > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version. \
-   > ### => Didn't WORK with CodeCepticon!
+   > => ConfuserEx profile also added here (AnyCPU/x86/x64) \
+   > #### => Didn't WORK with CodeCepticon!
 > Updated these lines in Newly created/added SharpChrome.sln file:
 ```xml
 <ItemGroup>
@@ -143,6 +144,8 @@ Exception: dnlib.DotNet.AssemblyResolveException: Could not resolve assembly: IC
 ```
 > From: `..\SharpDPAPI\Domain\Version.cs` to `..\..\SharpDPAPI-all\SharpDPAPI\Domain\Version.cs`, cause I have created 2 seperate folders solely for Codecepticon compilation of SharpChrome and SharpDPAPI independently and both SharpDPAPI and SharpChrome folder are made independent of one another.
    - SharpDPAPI: Created different folder as well as different .sln file. (URL of modified: .zip)
-   > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version.
+   > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version. \
+   > => \
+   > =>  
 
 
