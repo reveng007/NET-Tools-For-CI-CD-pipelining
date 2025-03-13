@@ -69,8 +69,57 @@ NET Tools for CI CD pipelining usecase!
 9. SharpHound: https://github.com/SpecterOps/SharpHound (URL of modified: .zip)
 > => Can build: x64, AnyCPU and x86 binaries in 4.8 NET Version. \
 > => Build via MSBuild Binary was causing error, So Compiled binaries via Visual Studio in this case, and kept those binaries here as it is. \
->
-> 
+> => 
+> => Presence of dependecy dll is present in .csproj file (But in a scattered manner). \
+> => ConfuserEx profile also added here (AnyCPU/x86/x64)
+> => Copied dependecy dlls:
+<details><summary>See Details</summary>
+
+```markdown
+=> ~\.nuget\packages\sharphoundcommon\4.2.2\lib\net472\SharpHoundCommonLib.dll
+
+
+`[ERROR] Failed to resolve dependency of 'SharpHound.exe'.
+Exception: dnlib.DotNet.AssemblyResolveException: Could not resolve assembly: Microsoft.Extensions.Logging.Abstractions, Version=`
+# .\nuget.exe install Microsoft.Extensions.Logging.Abstractions -Version 8.0.0 -OutputDirectory .
+=> .\9.SharpHound_SpecterOps\SharpHound-2.X\Microsoft.Extensions.Logging.Abstractions.8.0.0\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll
+
+
+`Exception: dnlib.DotNet.AssemblyResolveException: Could not resolve assembly: Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51`
+# .\nuget.exe install Microsoft.Bcl.AsyncInterfaces -Version 8.0.0 -OutputDirectory .
+=> .\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll
+
+
+`[ERROR] Failed to resolve dependency of 'SharpHound.exe'.
+Exception: dnlib.DotNet.AssemblyResolveException: Could not resolve assembly: System.Threading.Channels, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51`
+# .\nuget.exe install System.Threading.Channels -Version 8.0.0 -OutputDirectory .
+=> .\System.Threading.Channels.8.0.0\lib\net462\System.Threading.Channels.dll
+
+
+`[ERROR] Failed to resolve dependency of 'SharpHound.exe'.
+Exception: dnlib.DotNet.AssemblyResolveException: Could not resolve assembly: System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51`
+# Already downloaded before via previous installations of nuget
+=> .\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll
+
+
+`[ERROR] Failed to resolve dependency of 'SharpHound.exe'.
+Exception: dnlib.DotNet.AssemblyResolveException: Could not resolve assembly: Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed`
+# Already downloaded before via previous installations of nuget
+=> ~\.nuget\packages\newtonsoft.json\13.0.1\lib\net45\Newtonsoft.Json.dll
+
+
+`[ERROR] Failed to resolve dependency of 'SharpHound.exe'.
+Exception: dnlib.DotNet.AssemblyResolveException: Could not resolve assembly: CommandLine, Version=2.8.0.0, Culture=neutral, PublicKeyToken=5a870481e358d379`
+# Already downloaded before via previous installations of nuget
+=> ~\.nuget\packages\commandlineparser\2.8.0\lib\net45\CommandLine.dll
+
+
+`[ERROR] Failed to resolve dependency of 'SharpHound.exe'.
+Exception: dnlib.DotNet.AssemblyResolveException: Could not resolve assembly: ICSharpCode.SharpZipLib, Version=1.3.3.11, Culture=neutral, PublicKeyToken=1b03e6acf1164f73`
+# Already downloaded before via previous installations of nuget
+=> ~\.nuget\packages\sharpziplib\1.3.3\lib\net45\ICSharpCode.SharpZipLib.dll
+```
+</details>
 
 10. SharpDPAPI: https://github.com/GhostPack/SharpDPAPI
    - SharpChrome: Created different folder as well as different .sln file. (URL of modified: .zip)
