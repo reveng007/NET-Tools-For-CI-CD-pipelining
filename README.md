@@ -32,13 +32,21 @@ NET Tools for CI CD pipelining usecase!
 
 5. SharpSystemTriggers: https://github.com/cube0x0/SharpSystemTriggers
    - SharpSpoolTrigger: Created different folder as well as different .sln file. (URL of modified: .zip)
-   > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version.
+   > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version. \
+   > => CodeCepticon Works! \
+   > => ConfuserEx profile also added here (AnyCPU/x86/x64)
    - SharpEfsTrigger: Created different folder as well as different .sln file. (URL of modified: .zip)
-   > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version.
+   > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version. \
+   > => CodeCepticon Works! \
+   > => ConfuserEx profile also added here (AnyCPU/x86/x64)
    - SharpDcomTrigger: Created different folder as well as different .sln file. (URL of modified: .zip)
-   > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version.
+   > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version. \
+   > => CodeCepticon Works! \
+   > => ConfuserEx profile also added here (AnyCPU/x86/x64)
    - Midl2Bytes: Created different folder as well as different .sln file. (URL of modified: .zip)
-   > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version.
+   > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version. \
+   > => CodeCepticon Works! \
+   > => ConfuserEx profile also added here (AnyCPU/x86/x64)
 
 6. Rubeus: https://github.com/GhostPack/Rubeus (URL of modified: .zip)
 > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version.
