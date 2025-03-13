@@ -28,6 +28,7 @@ NET Tools for CI CD pipelining usecase!
 > => Can build: x64 as well as AnyCPU binaries in 4.8, 4.7.2 and 3.5 NET Version. \
 > => CodeCepticon Works! \
 > => Copied dependecy dll, `4.CertStealer_TheWover\CertStealer-main\packages\CommandLineParser.1.9.71\lib\net35\CommandLine.dll` to compiled binary folder: For ConfuSerEx UseCase. \
+> => Presence of dependecy dll is present in .csproj file. \
 > => ConfuserEx profile also added here (AnyCPU/x86/x64)
 
 5. SharpSystemTriggers: https://github.com/cube0x0/SharpSystemTriggers
@@ -62,6 +63,7 @@ NET Tools for CI CD pipelining usecase!
 > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version. \
 > => CodeCepticon Works! \
 > => Copied dependecy dll, `8.SharpView_tevora-threat\SharpView-master\packages\PCRE.NET.0.7.0\lib\net45\PCRE.NET.dll` to compiled binary folder: For ConfuSerEx UseCase. \
+> => Presence of dependecy dll is present in .csproj file. \
 > => ConfuserEx profile also added here (AnyCPU/x86/x64)
 
 9. SharpHound: https://github.com/SpecterOps/SharpHound (URL of modified: .zip)
