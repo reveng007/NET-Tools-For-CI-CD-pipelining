@@ -168,7 +168,7 @@ PS C:\Users\soumy\Downloads> .\SharpSCCM.exe local triage
 ```
 </details>
 
-> => ConfuserEx 
+> => CodeCepticon Worked with `SharpSCCM` as well as `` \
 > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version. \
 > => ConfuserEx profile also added here (AnyCPU/x86/x64)
 
