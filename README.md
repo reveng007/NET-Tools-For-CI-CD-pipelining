@@ -61,7 +61,8 @@ NET Tools for CI CD pipelining usecase!
 8. SharpView: https://github.com/tevora-threat/SharpView (URL of modified: .zip)
 > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version. \
 > => CodeCepticon Works! \
-> 
+> => Copied dependecy dll, `8.SharpView_tevora-threat\SharpView-master\packages\PCRE.NET.0.7.0\lib\net45\PCRE.NET.dll` to compiled binary folder: For ConfuSerEx UseCase. \
+> => ConfuserEx profile also added here (AnyCPU/x86/x64)
 
 9. SharpHound: https://github.com/SpecterOps/SharpHound (URL of modified: .zip)
 > => Can build: x64, AnyCPU and x86 binaries in 4.8 NET Version. \
