@@ -69,7 +69,7 @@ NET Tools for CI CD pipelining usecase!
 9. SharpHound: https://github.com/SpecterOps/SharpHound (URL of modified: .zip)
 > => Can build: x64, AnyCPU and x86 binaries in 4.8 NET Version. \
 > => Build via MSBuild Binary was causing error, So Compiled binaries via Visual Studio in this case, and kept those binaries here as it is. \
-> => \
+> => CodeCepticon Works! \
 > => Presence of dependecy dll is present in .csproj file (But in a scattered manner). \
 > => ConfuserEx profile also added here (AnyCPU/x86/x64) \
 > => Copied dependecy dlls:
