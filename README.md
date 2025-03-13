@@ -56,7 +56,7 @@ NET Tools for CI CD pipelining usecase!
 7. Seatbelt: https://github.com/GhostPack/Seatbelt (URL of modified: .zip)
 > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version. \
 > => CodeCepticon Works! \
-> 
+> => ConfuserEx profile also added here (AnyCPU/x86/x64)
 
 8. SharpView: https://github.com/tevora-threat/SharpView (URL of modified: .zip)
 > => Can build: x64, AnyCPU and x86 binaries in 4.8 and 4.7.2 NET Version. \
