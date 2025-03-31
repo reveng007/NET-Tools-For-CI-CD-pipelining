@@ -1,5 +1,10 @@
 # NET Tools for CI CD pipelining:
 
+### Compiled Binaries: 
+1. https://github.com/Flangvik/SharpCollection
+2. https://github.com/Flangvik/ObfuscatedSharpCollection
+3. https://github.com/jakobfriedl/precompiled-binaries
+
 NET Tools for CI CD pipelining usecase!
 
 1. SharpSCCM: https://github.com/Mayyhem/SharpSCCM/ (URL of modified: .zip)
